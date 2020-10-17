@@ -2,6 +2,12 @@
 
 This QuickApp reads the PM2.5, PM10, Temperature and Humidity values directly from a sensor. With this sensor you can measure air quality yourself. This QuickApp will send notifications when PM2.5 or PM10 readings reach a breakpoint.
 
+Changes version 0.4 (17th October 2020)
+· Added support for BME280 sensor (temperature, humidity and air pressure)
+· Added QuickApp Variable bme280Sensor (true or false) to indicate the pressence of a BME280 sensor otherwise a DHT22 sensor is assumed
+· Reduced the amount of labels, now only one label
+· Removed the firmware version from the log under the icon
+   
 Changes version 0.3 (16th August 2020) 
 · Error message instead of debug message in case of an error 
 · Changed method of adding QuickApp variables, so they can be edited 
@@ -17,7 +23,7 @@ Changes version 0.2 (15th July 2020):
 My configuration of the DIY air quality sensor: 
 · Nova SDS011 air quality sensor 
 · NodeMCU ESP8266 V2 opensource WiFi board 
-· DHT22 temperature and humidity sensor
+· BME280 temperature, humidity and pressure sensor
 
 See also https://luftdaten.info 
 See also https://sensor.community/en/sensors/airrohr/ how to simply build the air quality sensor yourself 
