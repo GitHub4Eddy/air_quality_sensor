@@ -2,6 +2,15 @@
 
 This QuickApp reads the PM2.5, PM10, Temperature and Humidity values directly from a sensor. With this sensor you can measure air quality yourself. This QuickApp will send notifications when PM2.5 or PM10 readings reach a breakpoint.
 
+
+Changes version 0.5 (23rd October 2020)
+· With the new firmware and API function, solved a small bug in presenting WiFi dBm
+· Changed humidity and air pressure values to zero decimals
+· Added air pressure unit text "hPa"
+· Changed the master device to "Generic Device" 
+· Added QuickApp Variable for user defined icon master device
+· Solved a bug preventing creation of QuickApp Variable bme280Sensor
+   
 Changes version 0.4 (17th October 2020)
 · Added support for BME280 sensor (temperature, humidity and air pressure)
 · Added QuickApp Variable bme280Sensor (true or false) to indicate the pressence of a BME280 sensor otherwise a DHT22 sensor is assumed
