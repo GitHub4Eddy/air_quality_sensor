@@ -2,6 +2,13 @@
 
 This QuickApp reads the PM2.5, PM10, Temperature and Humidity values directly from a sensor. With this sensor you can measure air quality yourself. This QuickApp will send notifications when PM2.5 or PM10 readings reach a breakpoint.
 
+Changes version 1.1 (31th Januari 2021)
+· Added support for Plantower Air Quality Sensor (for now without PM1.0)
+· Added Airpressuretext to log of Child Device Airpressure
+· Added Quickapp variable for debug level (1=some, 2=few, 3=all). Recommended default value is 1.
+· Removed QuickApp Variable bme280Sensor (no need for that anymore)
+· Removed QuickApp Variable path (is now fixed)
+   
 Changes version 1.0 (23rd January 2021)
 · Added Child Device for Absolute Humidity
 · Added "Refresh" button
@@ -42,7 +49,11 @@ See also https://sensor.community/en/sensors/airrohr/ how to simply build the ai
 See also for map of measurements: https://sensor.community/en/ 
 See also for CVS files: https://archive.luftdaten.info See also https://github.com/opendata-stuttgart/
 
-Variables (mandatory): IPaddress = [IP address of your sensor] Path = [Path behind the IP address, normally /data.json] Interval = [Number in seconds, the sensor normally is updated every 145 seconds] UserID = [User id to notify of PM2.5 / PM10 breakpoints]
+Variables (mandatory): 
+IPaddress = [IP address of your sensor] 
+Path = [Path behind the IP address, normally /data.json] 
+Interval = [Number in seconds, the sensor normally is updated every 145 seconds] 
+UserID = [User id to notify of PM2.5 / PM10 breakpoints]
 
 PM2.5 breakpoints 0 - 30 GOOD (Minimal) 
 31 - 60 SATISFACTORY (Minor breathing discomfort to sensitive people) 
